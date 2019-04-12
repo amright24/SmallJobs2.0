@@ -270,6 +270,40 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-676.33928571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wMq-cs-aan">
+            <objects>
+                <viewController id="S5v-ug-ZfV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z3j-hv-fFz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBG" translatesAutoresizingMaskIntoConstraints="NO" id="wNe-T7-YBW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-kD-v8s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wNe-T7-YBW" firstAttribute="trailing" secondItem="kFa-S6-kj8" secondAttribute="trailing" id="2FF-ZX-vY6"/>
+                            <constraint firstItem="wNe-T7-YBW" firstAttribute="leading" secondItem="kFa-S6-kj8" secondAttribute="leading" id="9AE-ll-trO"/>
+                            <constraint firstAttribute="bottom" secondItem="t0O-kD-v8s" secondAttribute="bottom" id="9Wd-qn-OrG"/>
+                            <constraint firstItem="wNe-T7-YBW" firstAttribute="top" secondItem="Z3j-hv-fFz" secondAttribute="top" id="CDh-Rr-1z7"/>
+                            <constraint firstItem="t0O-kD-v8s" firstAttribute="top" secondItem="Z3j-hv-fFz" secondAttribute="top" id="IEh-ra-yuS"/>
+                            <constraint firstItem="t0O-kD-v8s" firstAttribute="trailing" secondItem="kFa-S6-kj8" secondAttribute="trailing" id="Nzm-37-aYK"/>
+                            <constraint firstAttribute="bottom" secondItem="wNe-T7-YBW" secondAttribute="bottom" id="Znw-hA-H8e"/>
+                            <constraint firstItem="t0O-kD-v8s" firstAttribute="leading" secondItem="kFa-S6-kj8" secondAttribute="leading" id="bKN-hj-7VO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kFa-S6-kj8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qp7-Fp-UM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820.28985507246387" y="0.0"/>
+        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -350,6 +384,7 @@
     <resources>
         <image name="HandShake" width="30" height="30"/>
         <image name="Heart" width="30" height="30"/>
+        <image name="LoginBG" width="2820" height="4155"/>
         <image name="Message" width="30" height="30"/>
         <image name="Profile" width="30" height="30"/>
         <image name="Search" width="30" height="30"/>
