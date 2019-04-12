@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>745724010587-fgq7n9tpaks10ak9cn2ism5f8anas4e9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.745724010587-fgq7n9tpaks10ak9cn2ism5f8anas4e9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOt7VgKIxyQ5wx3TIJMgaScNbtR_XCfeY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>745724010587</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.JATRpresets.SmallJobs2-0</string>
+	<key>PROJECT_ID</key>
+	<string>smalljobs-529d1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smalljobs-529d1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:745724010587:ios:1bca946ec327c688</string>
+	<key>DATABASE_URL</key>
+	<string>https://smalljobs-529d1.firebaseio.com</string>
+</dict>
+</plist>

@@ -10,4 +10,18 @@ import UIKit
 
 class SampleJobCell: UICollectionViewCell {
     
+    var sampleJob: SampleJob! {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    @IBOutlet weak var sampleJobImage: UIImageView!
+    @IBOutlet weak var sampleJobLbl: UILabel!
+    
+    private func updateUI() {
+        sampleJobLbl?.text! = sampleJob.title
+        sampleJobImage?.image! = sampleJob.image
+    }
+    
 }

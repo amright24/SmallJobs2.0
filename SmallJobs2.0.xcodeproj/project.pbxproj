@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52089A3225FA51500C72793 /* SampleJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52089A2225FA51500C72793 /* SampleJobCell.swift */; };
+		B52089A5225FAB9800C72793 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52089A4225FAB9800C72793 /* UITabBarViewController.swift */; };
+		B52089A7225FB37F00C72793 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52089A6225FB37F00C72793 /* GoogleService-Info.plist */; };
 		B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DB225F8F9700876FF2 /* AppDelegate.swift */; };
-		B5A500DE225F8F9700876FF2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DD225F8F9700876FF2 /* FirstViewController.swift */; };
-		B5A500E0225F8F9700876FF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DF225F8F9700876FF2 /* SecondViewController.swift */; };
+		B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DD225F8F9700876FF2 /* SearchVC.swift */; };
+		B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DF225F8F9700876FF2 /* SavedVC.swift */; };
 		B5A500E3225F8F9700876FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E1225F8F9700876FF2 /* Main.storyboard */; };
 		B5A500E5225F8F9800876FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E4225F8F9800876FF2 /* Assets.xcassets */; };
 		B5A500E8225F8F9800876FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E6225F8F9800876FF2 /* LaunchScreen.storyboard */; };
+		B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F0225F923800876FF2 /* JobsVC.swift */; };
+		B5A500F3225F956600876FF2 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F2225F956600876FF2 /* MessageVC.swift */; };
+		B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F4225F957300876FF2 /* ProfileVC.swift */; };
+		B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */; };
+		B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500FD225F9E9300876FF2 /* SampleJob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B52089A2225FA51500C72793 /* SampleJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJobCell.swift; sourceTree = "<group>"; };
+		B52089A4225FAB9800C72793 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		B52089A6225FB37F00C72793 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B5A500D8225F8F9700876FF2 /* SmallJobs2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallJobs2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A500DB225F8F9700876FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5A500DD225F8F9700876FF2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B5A500DF225F8F9700876FF2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B5A500DD225F8F9700876FF2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		B5A500DF225F8F9700876FF2 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		B5A500E2225F8F9700876FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A500E4225F8F9800876FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A500E7225F8F9800876FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A500E9225F8F9800876FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A500F0225F923800876FF2 /* JobsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsVC.swift; sourceTree = "<group>"; };
+		B5A500F2225F956600876FF2 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		B5A500F4225F957300876FF2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRoundedTopCorners.swift; sourceTree = "<group>"; };
+		B5A500FD225F9E9300876FF2 /* SampleJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,55 @@
 		B5A500DA225F8F9700876FF2 /* SmallJobs2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				B5A500F8225F9C7700876FF2 /* Services */,
+				B5A500F6225F9C6900876FF2 /* Views */,
+				B5A500F7225F9C7000876FF2 /* Models */,
+				B5A500EF225F91FC00876FF2 /* Controllers */,
 				B5A500DB225F8F9700876FF2 /* AppDelegate.swift */,
-				B5A500DD225F8F9700876FF2 /* FirstViewController.swift */,
-				B5A500DF225F8F9700876FF2 /* SecondViewController.swift */,
 				B5A500E1225F8F9700876FF2 /* Main.storyboard */,
 				B5A500E4225F8F9800876FF2 /* Assets.xcassets */,
 				B5A500E6225F8F9800876FF2 /* LaunchScreen.storyboard */,
+				B52089A6225FB37F00C72793 /* GoogleService-Info.plist */,
 				B5A500E9225F8F9800876FF2 /* Info.plist */,
 			);
 			path = SmallJobs2.0;
+			sourceTree = "<group>";
+		};
+		B5A500EF225F91FC00876FF2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5A500DD225F8F9700876FF2 /* SearchVC.swift */,
+				B5A500DF225F8F9700876FF2 /* SavedVC.swift */,
+				B5A500F0225F923800876FF2 /* JobsVC.swift */,
+				B5A500F2225F956600876FF2 /* MessageVC.swift */,
+				B5A500F4225F957300876FF2 /* ProfileVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B5A500F6225F9C6900876FF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */,
+				B52089A2225FA51500C72793 /* SampleJobCell.swift */,
+				B52089A4225FAB9800C72793 /* UITabBarViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5A500F7225F9C7000876FF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5A500FD225F9E9300876FF2 /* SampleJob.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5A500F8225F9C7700876FF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A500E8225F8F9800876FF2 /* LaunchScreen.storyboard in Resources */,
+				B52089A7225FB37F00C72793 /* GoogleService-Info.plist in Resources */,
 				B5A500E5225F8F9800876FF2 /* Assets.xcassets in Resources */,
 				B5A500E3225F8F9700876FF2 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A500E0225F8F9700876FF2 /* SecondViewController.swift in Sources */,
+				B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */,
+				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
+				B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */,
+				B5A500F3225F956600876FF2 /* MessageVC.swift in Sources */,
 				B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */,
-				B5A500DE225F8F9700876FF2 /* FirstViewController.swift in Sources */,
+				B52089A3225FA51500C72793 /* SampleJobCell.swift in Sources */,
+				B52089A5225FAB9800C72793 /* UITabBarViewController.swift in Sources */,
+				B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */,
+				B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */,
+				B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

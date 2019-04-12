@@ -10,12 +10,11 @@ import UIKit
 
 class ImageRoundedTopCorners: UIImageView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    func roundCorners(corners:UIRectCorner, radius: CGFloat)
+    {
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
+        self.layer.mask = maskLayer
     }
-    */
 
 }
