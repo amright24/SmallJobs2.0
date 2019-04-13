@@ -29,6 +29,8 @@
 		B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F4225F957300876FF2 /* ProfileVC.swift */; };
 		B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */; };
 		B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500FD225F9E9300876FF2 /* SampleJob.swift */; };
+		B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */; };
+		B5D5FA47226181340092D8A3 /* JobChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA46226181340092D8A3 /* JobChannel.swift */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		B5A500F4225F957300876FF2 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRoundedTopCorners.swift; sourceTree = "<group>"; };
 		B5A500FD225F9E9300876FF2 /* SampleJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJob.swift; sourceTree = "<group>"; };
+		B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobChannelCell.swift; sourceTree = "<group>"; };
+		B5D5FA46226181340092D8A3 /* JobChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobChannel.swift; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +149,7 @@
 			children = (
 				B5A500F9225F9D2F00876FF2 /* ImageRoundedTopCorners.swift */,
 				B52089A2225FA51500C72793 /* SampleJobCell.swift */,
+				B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */,
 				B52089A4225FAB9800C72793 /* UITabBarViewController.swift */,
 				B52089AA2260DB6500C72793 /* GradientView.swift */,
 				B52089AC2260E57C00C72793 /* RoundedButton.swift */,
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B5A500FD225F9E9300876FF2 /* SampleJob.swift */,
+				B5D5FA46226181340092D8A3 /* JobChannel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				B52089AF2260E5B800C72793 /* RoundedView.swift in Sources */,
 				B52089AB2260DB6500C72793 /* GradientView.swift in Sources */,
 				B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */,
+				B5D5FA47226181340092D8A3 /* JobChannel.swift in Sources */,
 				B5A500F3225F956600876FF2 /* MessageVC.swift in Sources */,
 				B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */,
 				B52089A92260D06F00C72793 /* DataService.swift in Sources */,
@@ -312,6 +319,7 @@
 				B52089B32260F2F200C72793 /* LoginVC.swift in Sources */,
 				B52089A5225FAB9800C72793 /* UITabBarViewController.swift in Sources */,
 				B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */,
+				B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */,
 				B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */,
 				B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */,
 				B52089B52260F52000C72793 /* ShadowView.swift in Sources */,

@@ -10,26 +10,18 @@ import UIKit
 
 class JobChannel {
     
+    var image: UIImage
     
-    
-    
-//    init(image: UIImage) {
-//        self.image = image
-//    }
-//    
-//    
-//    static func createJobChannel() -> [JobChannel] {
-//        return [
-//            JobChannel(image: UIImage(named: "home.png")!),
-//            JobChannel(image: UIImage(named: "saved.png")!),
-//            JobChannel(image: UIImage(named: "hires.png")!),
-//            JobChannel(image: UIImage(named: "history.png")!)
-//            
-//        ]
-//    }
-    
-    
-    
-    
-    
+    init(image: UIImage) {
+        self.image = image
+    }
+
+    static func createJobChannel() -> [JobChannel] {
+        return [
+            JobChannel(image: UIImage(named: "photography.png")!),
+            JobChannel(image: UIImage(named: "lessons.png")!),
+            JobChannel(image: UIImage(named: "modeling.png")!)
+            
+        ]
+    }
 }
