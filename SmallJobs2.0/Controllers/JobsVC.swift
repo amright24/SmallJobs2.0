@@ -10,10 +10,13 @@ import UIKit
 
 class JobsVC: UIViewController {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     
 //    private var jobChannel = JobChannel.createJobChannel()
     
+=======
+>>>>>>> parent of bcaa892... its working now, fingers crossed
 =======
 >>>>>>> parent of bcaa892... its working now, fingers crossed
 
@@ -24,6 +27,7 @@ class JobsVC: UIViewController {
     }
     
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
 //    
@@ -61,6 +65,19 @@ class JobsVC: UIViewController {
 //}
 
 
+=======
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+>>>>>>> parent of bcaa892... its working now, fingers crossed
 =======
     /*
     // MARK: - Navigation
