@@ -36,7 +36,7 @@ extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "jobChannelCell", for: indexPath) as! JobChannelCell
-        cell.jobChannel = jobChannel[indexPath.row]
+        cell.jobChannel = jobChannel[indexPath.item]
         
         
         return cell
@@ -51,7 +51,7 @@ extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         
-        return 10
+        return 0
     }
   
 

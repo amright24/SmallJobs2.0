@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 10)!], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 10)!], for: .selected)
         FirebaseApp.configure()
+        if Auth.auth().currentUser == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
+            window?.makeKeyAndVisible()
+            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+        }
         return true
     }
 

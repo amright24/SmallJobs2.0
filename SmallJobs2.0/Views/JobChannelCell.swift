@@ -20,8 +20,7 @@ class JobChannelCell: UICollectionViewCell {
     
     
     private func updateUI() {
-        jobChannelImage?.image = jobChannelImage.image
-//        jobChannelImage?.image! = jobChannelImage.image
+        jobChannelImage?.image = jobChannel.image
     }
     
 }

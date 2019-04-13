@@ -18,10 +18,10 @@ class JobChannel {
 
     static func createJobChannel() -> [JobChannel] {
         return [
-            JobChannel(image: UIImage(named: "photography.png")!),
-            JobChannel(image: UIImage(named: "lessons.png")!),
-            JobChannel(image: UIImage(named: "modeling.png")!)
-            
+            JobChannel(image: UIImage(named: "lhouse.png")!),
+            JobChannel(image: UIImage(named: "lsaved.png")!),
+            JobChannel(image: UIImage(named: "lpeople.png")!),
+            JobChannel(image: UIImage(named: "lclock.png")!)
         ]
     }
 }

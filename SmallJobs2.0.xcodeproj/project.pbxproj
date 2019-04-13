@@ -31,6 +31,7 @@
 		B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500FD225F9E9300876FF2 /* SampleJob.swift */; };
 		B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */; };
 		B5D5FA47226181340092D8A3 /* JobChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA46226181340092D8A3 /* JobChannel.swift */; };
+		B5D5FA49226186C70092D8A3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA48226186C70092D8A3 /* InsetTextField.swift */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		B5A500FD225F9E9300876FF2 /* SampleJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJob.swift; sourceTree = "<group>"; };
 		B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobChannelCell.swift; sourceTree = "<group>"; };
 		B5D5FA46226181340092D8A3 /* JobChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobChannel.swift; sourceTree = "<group>"; };
+		B5D5FA48226186C70092D8A3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				B52089AC2260E57C00C72793 /* RoundedButton.swift */,
 				B52089AE2260E5B800C72793 /* RoundedView.swift */,
 				B52089B42260F52000C72793 /* ShadowView.swift */,
+				B5D5FA48226186C70092D8A3 /* InsetTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
 				B52089B72260F74400C72793 /* AuthService.swift in Sources */,
 				B52089AF2260E5B800C72793 /* RoundedView.swift in Sources */,
+				B5D5FA49226186C70092D8A3 /* InsetTextField.swift in Sources */,
 				B52089AB2260DB6500C72793 /* GradientView.swift in Sources */,
 				B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */,
 				B5D5FA47226181340092D8A3 /* JobChannel.swift in Sources */,
@@ -479,7 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JATRpresets.SmallJobs2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -498,7 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JATRpresets.SmallJobs2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
