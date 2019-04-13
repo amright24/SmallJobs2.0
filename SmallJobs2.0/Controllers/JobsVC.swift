@@ -9,19 +9,22 @@
 import UIKit
 
 class JobsVC: UIViewController {
+<<<<<<< HEAD
     
     
 //    private var jobChannel = JobChannel.createJobChannel()
     
+=======
+>>>>>>> parent of bcaa892... its working now, fingers crossed
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     
-}
 
+<<<<<<< HEAD
 //extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
 //    
 //    func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -58,3 +61,16 @@ class JobsVC: UIViewController {
 //}
 
 
+=======
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+>>>>>>> parent of bcaa892... its working now, fingers crossed
