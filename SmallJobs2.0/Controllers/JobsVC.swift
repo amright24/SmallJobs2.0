@@ -11,10 +11,13 @@ import UIKit
 class JobsVC: UIViewController {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     
 //    private var jobChannel = JobChannel.createJobChannel()
     
+=======
+>>>>>>> parent of bcaa892... its working now, fingers crossed
 =======
 >>>>>>> parent of bcaa892... its working now, fingers crossed
 =======
@@ -27,6 +30,7 @@ class JobsVC: UIViewController {
     }
     
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 //extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -66,6 +70,8 @@ class JobsVC: UIViewController {
 
 
 =======
+=======
+>>>>>>> parent of bcaa892... its working now, fingers crossed
     /*
     // MARK: - Navigation
 
@@ -77,6 +83,7 @@ class JobsVC: UIViewController {
     */
 
 }
+<<<<<<< HEAD
 >>>>>>> parent of bcaa892... its working now, fingers crossed
 =======
     /*
@@ -90,4 +97,6 @@ class JobsVC: UIViewController {
     */
 
 }
+>>>>>>> parent of bcaa892... its working now, fingers crossed
+=======
 >>>>>>> parent of bcaa892... its working now, fingers crossed
