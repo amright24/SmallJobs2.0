@@ -10,11 +10,8 @@ import UIKit
 
 class JobsVC: UIViewController {
 
-    
-    
     private var jobChannel = JobChannel.createJobChannel()
-    
-
+    private var currentJob = CurrentJob.createCurrentJob()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +21,18 @@ class JobsVC: UIViewController {
     
 
 }
+
+extension JobsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    
+}
+
+
 extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
