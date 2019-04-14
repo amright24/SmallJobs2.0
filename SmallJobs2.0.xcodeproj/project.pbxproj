@@ -21,7 +21,6 @@
 		B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DB225F8F9700876FF2 /* AppDelegate.swift */; };
 		B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DD225F8F9700876FF2 /* SearchVC.swift */; };
 		B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DF225F8F9700876FF2 /* SavedVC.swift */; };
-		B5A500E3225F8F9700876FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E1225F8F9700876FF2 /* Main.storyboard */; };
 		B5A500E5225F8F9800876FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E4225F8F9800876FF2 /* Assets.xcassets */; };
 		B5A500E8225F8F9800876FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A500E6225F8F9800876FF2 /* LaunchScreen.storyboard */; };
 		B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500F0225F923800876FF2 /* JobsVC.swift */; };
@@ -34,6 +33,12 @@
 		B5D5FA49226186C70092D8A3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA48226186C70092D8A3 /* InsetTextField.swift */; };
 		B5D5FA4B2262C6410092D8A3 /* CurrentJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA4A2262C6410092D8A3 /* CurrentJobCell.swift */; };
 		B5D5FA4D2262C6600092D8A3 /* CurrentJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA4C2262C6600092D8A3 /* CurrentJob.swift */; };
+		B5D5FA532263A3FC0092D8A3 /* ViewJobVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA522263A3FC0092D8A3 /* ViewJobVC.swift */; };
+		B5D5FA552263AB720092D8A3 /* GradientRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA542263AB720092D8A3 /* GradientRoundedButton.swift */; };
+		B5D5FA572263AE710092D8A3 /* SuperShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA562263AE710092D8A3 /* SuperShadow.swift */; };
+		B5D5FA5A2263B0D00092D8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D5FA582263B0D00092D8A3 /* Main.storyboard */; };
+		B5D5FA5C2263B12F0092D8A3 /* BlackToClearFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */; };
+		B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +59,6 @@
 		B5A500DB225F8F9700876FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A500DD225F8F9700876FF2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		B5A500DF225F8F9700876FF2 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
-		B5A500E2225F8F9700876FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A500E4225F8F9800876FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A500E7225F8F9800876FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A500E9225F8F9800876FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +72,12 @@
 		B5D5FA48226186C70092D8A3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		B5D5FA4A2262C6410092D8A3 /* CurrentJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJobCell.swift; sourceTree = "<group>"; };
 		B5D5FA4C2262C6600092D8A3 /* CurrentJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJob.swift; sourceTree = "<group>"; };
+		B5D5FA522263A3FC0092D8A3 /* ViewJobVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewJobVC.swift; sourceTree = "<group>"; };
+		B5D5FA542263AB720092D8A3 /* GradientRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRoundedButton.swift; sourceTree = "<group>"; };
+		B5D5FA562263AE710092D8A3 /* SuperShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperShadow.swift; sourceTree = "<group>"; };
+		B5D5FA592263B0D00092D8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackToClearFade.swift; sourceTree = "<group>"; };
+		B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,13 +132,14 @@
 		B5A500DA225F8F9700876FF2 /* SmallJobs2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				B5D5FA4E2262E5DF0092D8A3 /* Extensions */,
 				B5A500F8225F9C7700876FF2 /* Services */,
 				B5A500F6225F9C6900876FF2 /* Views */,
 				B5A500F7225F9C7000876FF2 /* Models */,
 				B5A500EF225F91FC00876FF2 /* Controllers */,
 				B5A500DB225F8F9700876FF2 /* AppDelegate.swift */,
-				B5A500E1225F8F9700876FF2 /* Main.storyboard */,
 				B5A500E4225F8F9800876FF2 /* Assets.xcassets */,
+				B5D5FA582263B0D00092D8A3 /* Main.storyboard */,
 				B5A500E6225F8F9800876FF2 /* LaunchScreen.storyboard */,
 				B52089A6225FB37F00C72793 /* GoogleService-Info.plist */,
 				B5A500E9225F8F9800876FF2 /* Info.plist */,
@@ -146,6 +157,7 @@
 				B5A500F0225F923800876FF2 /* JobsVC.swift */,
 				B5A500F2225F956600876FF2 /* MessageVC.swift */,
 				B5A500F4225F957300876FF2 /* ProfileVC.swift */,
+				B5D5FA522263A3FC0092D8A3 /* ViewJobVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +175,10 @@
 				B52089AE2260E5B800C72793 /* RoundedView.swift */,
 				B52089B42260F52000C72793 /* ShadowView.swift */,
 				B5D5FA48226186C70092D8A3 /* InsetTextField.swift */,
+				B5D5FA542263AB720092D8A3 /* GradientRoundedButton.swift */,
+				B5D5FA562263AE710092D8A3 /* SuperShadow.swift */,
+				B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */,
+				B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +200,13 @@
 				B52089B62260F74400C72793 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B5D5FA4E2262E5DF0092D8A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +272,7 @@
 				B5A500E8225F8F9800876FF2 /* LaunchScreen.storyboard in Resources */,
 				B52089A7225FB37F00C72793 /* GoogleService-Info.plist in Resources */,
 				B5A500E5225F8F9800876FF2 /* Assets.xcassets in Resources */,
-				B5A500E3225F8F9700876FF2 /* Main.storyboard in Resources */,
+				B5D5FA5A2263B0D00092D8A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52089B12260F28700C72793 /* AuthVC.swift in Sources */,
+				B5D5FA532263A3FC0092D8A3 /* ViewJobVC.swift in Sources */,
+				B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */,
 				B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */,
 				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
 				B52089B72260F74400C72793 /* AuthService.swift in Sources */,
@@ -323,6 +348,7 @@
 				B52089AB2260DB6500C72793 /* GradientView.swift in Sources */,
 				B5A500FA225F9D2F00876FF2 /* ImageRoundedTopCorners.swift in Sources */,
 				B5D5FA47226181340092D8A3 /* JobChannel.swift in Sources */,
+				B5D5FA572263AE710092D8A3 /* SuperShadow.swift in Sources */,
 				B5A500F3225F956600876FF2 /* MessageVC.swift in Sources */,
 				B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */,
 				B52089A92260D06F00C72793 /* DataService.swift in Sources */,
@@ -334,7 +360,9 @@
 				B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */,
 				B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */,
 				B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */,
+				B5D5FA5C2263B12F0092D8A3 /* BlackToClearFade.swift in Sources */,
 				B52089B52260F52000C72793 /* ShadowView.swift in Sources */,
+				B5D5FA552263AB720092D8A3 /* GradientRoundedButton.swift in Sources */,
 				B52089AD2260E57C00C72793 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,20 +370,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5A500E1225F8F9700876FF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5A500E2225F8F9700876FF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5A500E6225F8F9800876FF2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B5A500E7225F8F9800876FF2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5D5FA582263B0D00092D8A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D5FA592263B0D00092D8A3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

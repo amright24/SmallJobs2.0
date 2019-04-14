@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrentJobCell: UITableViewCell {
+class CurrentJobCell: UICollectionViewCell {
     
     
     var currentJob: CurrentJob! {
@@ -25,17 +25,6 @@ class CurrentJobCell: UITableViewCell {
     @IBOutlet weak var currentJobDuration: UILabel!
     @IBOutlet weak var currentJobDistance: UILabel!
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-   
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     private func updateUI() {
         currentJobImage.image = currentJob.image

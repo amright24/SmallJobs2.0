@@ -10,27 +10,18 @@ import UIKit
 
 class JobsVC: UIViewController {
 
-    private var jobChannel = JobChannel.createJobChannel()
     private var currentJob = CurrentJob.createCurrentJob()
-
+    private let cellReuseIdentifier = "currentJobCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
     
 
 }
 
-extension JobsVC: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    
-    
-}
+
 
 
 extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -40,29 +31,18 @@ extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return jobChannel.count
+        return currentJob.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "jobChannelCell", for: indexPath) as! JobChannelCell
-        cell.jobChannel = jobChannel[indexPath.item]
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! CurrentJobCell
+        
+        cell.currentJob = currentJob[indexPath.item]
         
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size: CGSize = CGSize(width: view.frame.width / 4, height: view.frame.height)
-        return size
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         
-        return 0
     }
-  
 
 }
 
