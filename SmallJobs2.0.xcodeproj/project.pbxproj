@@ -40,6 +40,7 @@
 		B5D5FA5C2263B12F0092D8A3 /* BlackToClearFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */; };
 		B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */; };
 		B5D5FA602264CEC60092D8A3 /* NewMessageToBoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5F2264CEC60092D8A3 /* NewMessageToBoss.swift */; };
+		B5D5FA642264D9A20092D8A3 /* BindToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackToClearFade.swift; sourceTree = "<group>"; };
 		B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B5D5FA5F2264CEC60092D8A3 /* NewMessageToBoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageToBoss.swift; sourceTree = "<group>"; };
+		B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindToKeyboard.swift; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +210,7 @@
 		B5D5FA4E2262E5DF0092D8A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */,
 				B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */,
 				B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */,
+				B5D5FA642264D9A20092D8A3 /* BindToKeyboard.swift in Sources */,
 				B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */,
 				B5D5FA5C2263B12F0092D8A3 /* BlackToClearFade.swift in Sources */,
 				B52089B52260F52000C72793 /* ShadowView.swift in Sources */,
