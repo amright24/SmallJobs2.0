@@ -18,6 +18,9 @@
 		B52089B32260F2F200C72793 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52089B22260F2F200C72793 /* LoginVC.swift */; };
 		B52089B52260F52000C72793 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52089B42260F52000C72793 /* ShadowView.swift */; };
 		B52089B72260F74400C72793 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52089B62260F74400C72793 /* AuthService.swift */; };
+		B53BB55F22657ADE002D8375 /* CreateNewHireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB55E22657ADE002D8375 /* CreateNewHireVC.swift */; };
+		B53BB56122667D7F002D8375 /* SubtleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB56022667D7F002D8375 /* SubtleShadow.swift */; };
+		B53BB563226682F9002D8375 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB562226682F9002D8375 /* RoundedImageView.swift */; };
 		B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DB225F8F9700876FF2 /* AppDelegate.swift */; };
 		B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DD225F8F9700876FF2 /* SearchVC.swift */; };
 		B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DF225F8F9700876FF2 /* SavedVC.swift */; };
@@ -57,6 +60,9 @@
 		B52089B22260F2F200C72793 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B52089B42260F52000C72793 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		B52089B62260F74400C72793 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B53BB55E22657ADE002D8375 /* CreateNewHireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHireVC.swift; sourceTree = "<group>"; };
+		B53BB56022667D7F002D8375 /* SubtleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtleShadow.swift; sourceTree = "<group>"; };
+		B53BB562226682F9002D8375 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		B5A500D8225F8F9700876FF2 /* SmallJobs2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallJobs2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A500DB225F8F9700876FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A500DD225F8F9700876FF2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 				B5A500F4225F957300876FF2 /* ProfileVC.swift */,
 				B5D5FA522263A3FC0092D8A3 /* ViewJobVC.swift */,
 				B5D5FA5F2264CEC60092D8A3 /* NewMessageToBoss.swift */,
+				B53BB55E22657ADE002D8375 /* CreateNewHireVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +191,8 @@
 				B5D5FA562263AE710092D8A3 /* SuperShadow.swift */,
 				B5D5FA5B2263B12F0092D8A3 /* BlackToClearFade.swift */,
 				B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */,
+				B53BB56022667D7F002D8375 /* SubtleShadow.swift */,
+				B53BB562226682F9002D8375 /* RoundedImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,10 +353,13 @@
 			files = (
 				B52089B12260F28700C72793 /* AuthVC.swift in Sources */,
 				B5D5FA532263A3FC0092D8A3 /* ViewJobVC.swift in Sources */,
+				B53BB56122667D7F002D8375 /* SubtleShadow.swift in Sources */,
 				B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */,
 				B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */,
+				B53BB55F22657ADE002D8375 /* CreateNewHireVC.swift in Sources */,
 				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
 				B52089B72260F74400C72793 /* AuthService.swift in Sources */,
+				B53BB563226682F9002D8375 /* RoundedImageView.swift in Sources */,
 				B52089AF2260E5B800C72793 /* RoundedView.swift in Sources */,
 				B5D5FA49226186C70092D8A3 /* InsetTextField.swift in Sources */,
 				B5D5FA4D2262C6600092D8A3 /* CurrentJob.swift in Sources */,

@@ -25,7 +25,7 @@ class NewMessageToBoss: UIViewController {
     @IBAction func sendBtnWasPressed(_ sender: Any) {
         if textField.text != nil && textField.text != "Say something about the job..." {
             sendBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: textField.text, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil) { (isComplete) in
+            DataService.instance.uploadMessage(withMessage: textField.text, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil) { (isComplete) in
                 if isComplete {
                 self.sendBtn.isEnabled = true
                 self.dismiss(animated: true, completion: nil)
