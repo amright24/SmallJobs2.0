@@ -9,15 +9,24 @@
 import UIKit
 
 class SearchVC: UIViewController {
-
+    
     private var sampleJob = SampleJob.createSampleJob()
+    private var localJob = LocalJob.createLocalJob()
+    
+    
+    @IBOutlet weak var SampleJobCollectionView: UICollectionView!
+    @IBOutlet weak var LocalJobCollectionView: UICollectionView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        SampleJobCollectionView.delegate = self
+        LocalJobCollectionView.delegate = self
+        
+        SampleJobCollectionView.dataSource = self
+        LocalJobCollectionView.dataSource = self
     }
-
-
 }
 
 extension SearchVC: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -27,15 +36,30 @@ extension SearchVC: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sampleJob.count
+        if collectionView == self.SampleJobCollectionView {
+            return sampleJob.count
+        } else {
+            return localJob.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == self.SampleJobCollectionView {
+            let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "sampleJobCell", for: indexPath) as! SampleJobCell
+            
+            cellA.sampleJob = sampleJob[indexPath.row]
+            
+            return cellA
+        } else if collectionView == self.LocalJobCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "localJob", for: indexPath) as! LocalJobCell
+            cell.localJob = localJob[indexPath.row]
+            return cell
+        } else {
+            let cellC = collectionView.dequeueReusableCell(withReuseIdentifier: "sampleJobCell", for: indexPath) as! SampleJobCell
+            cellC.sampleJob = sampleJob[indexPath.row]
+            return cellC
+        }
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sampleJobCell", for: indexPath) as! SampleJobCell
         
-        cell.sampleJob = sampleJob[indexPath.row]
-
-        return cell
     }
 }

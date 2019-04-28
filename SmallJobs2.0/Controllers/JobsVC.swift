@@ -16,13 +16,8 @@ class JobsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
-
+ 
 }
-
-
-
 
 extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     

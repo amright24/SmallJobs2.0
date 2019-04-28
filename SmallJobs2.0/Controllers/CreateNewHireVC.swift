@@ -9,7 +9,8 @@
 import UIKit
 import Firebase
 
-class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate {
+    
     
     @IBOutlet weak var newJobUploadedImage: UIImageView!
     @IBOutlet weak var titleJobNameTxt: UITextField!
@@ -18,47 +19,84 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
     @IBOutlet weak var dateInput: UITextField!
     @IBOutlet weak var uploadPostBtn: RoundedButton!
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        jobDescriptionText.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         jobDescriptionText.delegate = self
+    }
+ 
+    
+    @IBAction func uploadImageBtnWasPressed(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
+    }
+    
+    func uploadJobImage(_ image: UIImage, completion: @escaping(_ url: URL?) -> ()) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let storageRef = Storage.storage().reference().child("user\(uid)")
         
-        //  MIGHT GET RID OF THIS!!!
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
-        //  MIGHT GET RID OF THIS!!!
-    }
-    
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status and drop into background
-        view.endEditing(true)
-    }
-    
-    //  MIGHT GET RID OF THIS!!! //  MIGHT GET RID OF THIS!!!//  MIGHT GET RID OF THIS!!!
-    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CreateNewHireVC.dismissKeyboard))
-    
-    
-    @objc func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y -= 150
-    }
-    @objc func keyboardWillHide(sender: NSNotification) {
-        self.view.frame.origin.y += 150
+        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
+        
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpg"
+        storageRef.putData(imageData, metadata: metadata) { metadata, error in
+            if error == nil, metadata != nil {
+                
+                storageRef.downloadURL { url, error in
+                    completion(url)
+                    // success!
+                }
+                print("success line 49")
+            } else {
+                print("failed: line 51")
+                completion(nil)
+            }
+        }
     }
     
     
-    //  MIGHT GET RID OF THIS!!!//  MIGHT GET RID OF THIS!!!//  MIGHT GET RID OF THIS!!!
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            newJobUploadedImage.image = image
+        } else {
+            print("did not work uploading image")
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func closeBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    func uploadJob(withTitle title: String, forUID uid: String, withGroupKey groupKey: String?, forPay pay: String, forDesc description: String, forDate date: String, uploadComplete: @escaping(_ status: Bool) -> ()) {
+        if groupKey != nil {
+            
+        } else {
+            
+            DataService.instance.REF_JOB_FEED.childByAutoId().updateChildValues(["jobTitle": title, "senderId": uid, "pay": pay, "description": description, "date": date])
+            uploadComplete(true)
+        }
+    }
     
     
     
     @IBAction func postJobBtnWasPressed(_ sender: Any) {
         if newJobUploadedImage.image != nil && titleJobNameTxt.text != nil && payInput.text != nil && jobDescriptionText.text != nil && dateInput.text != nil {
             uploadPostBtn.isEnabled = false
-            DataService.instance.uploadJob(withImage: newJobUploadedImage.image!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, forPay: payInput.text!, forDesc: jobDescriptionText.text, forDate: dateInput.text!) { (isComplete) in
+            
+            
+            self.uploadJob(withTitle: self.titleJobNameTxt.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, forPay: self.payInput.text!, forDesc: self.jobDescriptionText.text!, forDate: self.dateInput.text!) { (isComplete) in
                 if isComplete {
+                    
                     self.uploadPostBtn.isEnabled = true
                     self.dismiss(animated: true, completion: nil)
+                    
                 } else {
                     self.uploadPostBtn.isEnabled = true
                     print("//      there was a problem uploading this job   //")
@@ -67,50 +105,11 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
         }
     }
     
-    
-    @IBAction func uploadImageBtnWasPressed(_ sender: Any) {
-        let image = UIImagePickerController()
-        image.delegate = self
-        
-        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        
-        image.allowsEditing = false
-        
-        self.present(image, animated: true)
-        {
-            //after complete
-        }
-    }
-    
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            newJobUploadedImage.image = image
-        } else {
-            
-        }
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func closeBtnWasPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return (true)
-    }
-    
 
 }
+     // end of IBAction postJobBtnWasPressed
 
-extension CreateNewHireVC: UITextViewDelegate {
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        jobDescriptionText.text = ""
-        view.addGestureRecognizer(tap)
-    }
-    
-    
-}
+

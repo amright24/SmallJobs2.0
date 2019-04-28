@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = .white
         UITabBar.appearance().tintColor = .blue
         UITabBar.appearance().unselectedItemTintColor = .darkGray
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 10)!], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 10)!], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 10)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 10)!], for: .selected)
         FirebaseApp.configure()
         if Auth.auth().currentUser == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

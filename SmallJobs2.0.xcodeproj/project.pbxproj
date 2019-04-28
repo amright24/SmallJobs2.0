@@ -21,6 +21,8 @@
 		B53BB55F22657ADE002D8375 /* CreateNewHireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB55E22657ADE002D8375 /* CreateNewHireVC.swift */; };
 		B53BB56122667D7F002D8375 /* SubtleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB56022667D7F002D8375 /* SubtleShadow.swift */; };
 		B53BB563226682F9002D8375 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BB562226682F9002D8375 /* RoundedImageView.swift */; };
+		B54C390822720C7A0020F4B5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C390722720C7A0020F4B5 /* Message.swift */; };
+		B54C390A227214E60020F4B5 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C3909227214E60020F4B5 /* MessageCell.swift */; };
 		B5A500DC225F8F9700876FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DB225F8F9700876FF2 /* AppDelegate.swift */; };
 		B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DD225F8F9700876FF2 /* SearchVC.swift */; };
 		B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A500DF225F8F9700876FF2 /* SavedVC.swift */; };
@@ -44,6 +46,9 @@
 		B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */; };
 		B5D5FA602264CEC60092D8A3 /* NewMessageToBoss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA5F2264CEC60092D8A3 /* NewMessageToBoss.swift */; };
 		B5D5FA642264D9A20092D8A3 /* BindToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */; };
+		B5E18A62227502CB0063E063 /* LocalJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A61227502CB0063E063 /* LocalJob.swift */; };
+		B5E18A6422750FE50063E063 /* LocalJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A6322750FE50063E063 /* LocalJobCell.swift */; };
+		B5E18A6D22751C7C0063E063 /* LocalJobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E18A6B22751C7C0063E063 /* LocalJobCell.xib */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,8 @@
 		B53BB55E22657ADE002D8375 /* CreateNewHireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewHireVC.swift; sourceTree = "<group>"; };
 		B53BB56022667D7F002D8375 /* SubtleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtleShadow.swift; sourceTree = "<group>"; };
 		B53BB562226682F9002D8375 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		B54C390722720C7A0020F4B5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B54C3909227214E60020F4B5 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B5A500D8225F8F9700876FF2 /* SmallJobs2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallJobs2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A500DB225F8F9700876FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A500DD225F8F9700876FF2 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -88,6 +95,9 @@
 		B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B5D5FA5F2264CEC60092D8A3 /* NewMessageToBoss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageToBoss.swift; sourceTree = "<group>"; };
 		B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindToKeyboard.swift; sourceTree = "<group>"; };
+		B5E18A61227502CB0063E063 /* LocalJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJob.swift; sourceTree = "<group>"; };
+		B5E18A6322750FE50063E063 /* LocalJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJobCell.swift; sourceTree = "<group>"; };
+		B5E18A6B22751C7C0063E063 /* LocalJobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalJobCell.xib; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +152,7 @@
 		B5A500DA225F8F9700876FF2 /* SmallJobs2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				B5E18A65227519620063E063 /* Xibs */,
 				B5D5FA4E2262E5DF0092D8A3 /* Extensions */,
 				B5A500F8225F9C7700876FF2 /* Services */,
 				B5A500F6225F9C6900876FF2 /* Views */,
@@ -177,6 +188,7 @@
 		B5A500F6225F9C6900876FF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B5E18A6322750FE50063E063 /* LocalJobCell.swift */,
 				B52089A2225FA51500C72793 /* SampleJobCell.swift */,
 				B5D5FA442261808F0092D8A3 /* JobChannelCell.swift */,
 				B5D5FA4A2262C6410092D8A3 /* CurrentJobCell.swift */,
@@ -193,6 +205,7 @@
 				B5D5FA5D2263B6940092D8A3 /* CircleImage.swift */,
 				B53BB56022667D7F002D8375 /* SubtleShadow.swift */,
 				B53BB562226682F9002D8375 /* RoundedImageView.swift */,
+				B54C3909227214E60020F4B5 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,9 +213,11 @@
 		B5A500F7225F9C7000876FF2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B5E18A61227502CB0063E063 /* LocalJob.swift */,
 				B5A500FD225F9E9300876FF2 /* SampleJob.swift */,
 				B5D5FA46226181340092D8A3 /* JobChannel.swift */,
 				B5D5FA4C2262C6600092D8A3 /* CurrentJob.swift */,
+				B54C390722720C7A0020F4B5 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +237,14 @@
 				B5D5FA632264D9A20092D8A3 /* BindToKeyboard.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5E18A65227519620063E063 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				B5E18A6B22751C7C0063E063 /* LocalJobCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +311,7 @@
 				B52089A7225FB37F00C72793 /* GoogleService-Info.plist in Resources */,
 				B5A500E5225F8F9800876FF2 /* Assets.xcassets in Resources */,
 				B5D5FA5A2263B0D00092D8A3 /* Main.storyboard in Resources */,
+				B5E18A6D22751C7C0063E063 /* LocalJobCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +350,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -335,7 +359,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -354,8 +378,10 @@
 				B52089B12260F28700C72793 /* AuthVC.swift in Sources */,
 				B5D5FA532263A3FC0092D8A3 /* ViewJobVC.swift in Sources */,
 				B53BB56122667D7F002D8375 /* SubtleShadow.swift in Sources */,
+				B54C390822720C7A0020F4B5 /* Message.swift in Sources */,
 				B5D5FA5E2263B6940092D8A3 /* CircleImage.swift in Sources */,
 				B5A500F5225F957300876FF2 /* ProfileVC.swift in Sources */,
+				B54C390A227214E60020F4B5 /* MessageCell.swift in Sources */,
 				B53BB55F22657ADE002D8375 /* CreateNewHireVC.swift in Sources */,
 				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
 				B52089B72260F74400C72793 /* AuthService.swift in Sources */,
@@ -372,6 +398,7 @@
 				B52089A92260D06F00C72793 /* DataService.swift in Sources */,
 				B5D5FA602264CEC60092D8A3 /* NewMessageToBoss.swift in Sources */,
 				B52089A3225FA51500C72793 /* SampleJobCell.swift in Sources */,
+				B5E18A62227502CB0063E063 /* LocalJob.swift in Sources */,
 				B52089B32260F2F200C72793 /* LoginVC.swift in Sources */,
 				B52089A5225FAB9800C72793 /* UITabBarViewController.swift in Sources */,
 				B5D5FA4B2262C6410092D8A3 /* CurrentJobCell.swift in Sources */,
@@ -384,6 +411,7 @@
 				B52089B52260F52000C72793 /* ShadowView.swift in Sources */,
 				B5D5FA552263AB720092D8A3 /* GradientRoundedButton.swift in Sources */,
 				B52089AD2260E57C00C72793 /* RoundedButton.swift in Sources */,
+				B5E18A6422750FE50063E063 /* LocalJobCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
