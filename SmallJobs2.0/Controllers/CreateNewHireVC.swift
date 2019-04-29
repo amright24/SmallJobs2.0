@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate {
+class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
     
     
     @IBOutlet weak var newJobUploadedImage: UIImageView!
@@ -25,9 +25,41 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        uploadPostBtn.bindToKeyboard()
+        HideKeyboard()
+        titleJobNameTxt.delegate = self
+        payInput.delegate = self
         jobDescriptionText.delegate = self
+        dateInput.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
  
+    func HideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func DismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        
+    }
+    
+    
+    @objc func keyboardWillShow(notification: Notification) {
+        view.frame.origin.y = -200
+    }
+    
+    @objc func keyboardWillHide(notification: Notification) {
+        view.frame.origin.y = 0
+    }
     
     @IBAction func uploadImageBtnWasPressed(_ sender: Any) {
         let image = UIImagePickerController()
@@ -59,9 +91,7 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
             }
         }
     }
-    
-    
-    
+ 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             newJobUploadedImage.image = image
@@ -83,9 +113,7 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
             uploadComplete(true)
         }
     }
-    
-    
-    
+ 
     @IBAction func postJobBtnWasPressed(_ sender: Any) {
         if newJobUploadedImage.image != nil && titleJobNameTxt.text != nil && payInput.text != nil && jobDescriptionText.text != nil && dateInput.text != nil {
             uploadPostBtn.isEnabled = false
@@ -104,9 +132,6 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
             }
         }
     }
-    
-
 }
-     // end of IBAction postJobBtnWasPressed
 
 

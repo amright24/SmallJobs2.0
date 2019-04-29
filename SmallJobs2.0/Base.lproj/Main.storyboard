@@ -668,7 +668,7 @@
                                 </constraints>
                                 <state key="normal" image="addJob"/>
                                 <connections>
-                                    <segue destination="sGf-QB-9Q9" kind="presentation" id="hk5-9D-DOH"/>
+                                    <segue destination="sGf-QB-9Q9" kind="presentation" id="eoT-2Q-EwP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -981,7 +981,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="396"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friends" translatesAutoresizingMaskIntoConstraints="NO" id="bSK-e3-vhG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200.00000000000023"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Dr3-4K-qOe"/>
                                         </constraints>
@@ -1646,6 +1646,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInBtnWasPressed:" destination="hk1-G5-OLd" eventType="touchUpInside" id="HAE-5j-Onj"/>
+                                    <action selector="signUpBtnWasPressed:" destination="d0z-fi-GLW" eventType="touchUpInside" id="cbP-dk-oKZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1676,6 +1677,9 @@
                         <viewLayoutGuide key="safeArea" id="orK-hU-H8T"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="DW0-Hp-3hf" id="bBo-1r-Pwt"/>
+                        <outlet property="firstAndLastNameTxt" destination="8af-MG-fbS" id="76x-AY-O2g"/>
+                        <outlet property="passwordTxt" destination="bV5-bz-vFI" id="zPz-2W-iKv"/>
                         <outlet property="profileImage" destination="bex-U8-lQH" id="ylV-Xa-c5k"/>
                     </connections>
                 </viewController>

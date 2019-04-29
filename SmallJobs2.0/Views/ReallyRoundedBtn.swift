@@ -9,10 +9,16 @@
 import UIKit
 
 class ReallyRoundedBtn: UIButton {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
 
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = frame.height / 2
+
     }
 
 }
