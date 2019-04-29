@@ -49,6 +49,10 @@
 		B5E18A62227502CB0063E063 /* LocalJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A61227502CB0063E063 /* LocalJob.swift */; };
 		B5E18A6422750FE50063E063 /* LocalJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A6322750FE50063E063 /* LocalJobCell.swift */; };
 		B5E18A6D22751C7C0063E063 /* LocalJobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E18A6B22751C7C0063E063 /* LocalJobCell.xib */; };
+		B5E18A6F22754CFB0063E063 /* WhiteToClearFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A6E22754CFB0063E063 /* WhiteToClearFade.swift */; };
+		B5E18A71227695610063E063 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A70227695610063E063 /* SignUpVC.swift */; };
+		B5E18A7322769DD10063E063 /* OutlinedRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A7222769DD10063E063 /* OutlinedRoundedButton.swift */; };
+		B5E18A752276A34E0063E063 /* ReallyRoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E18A742276A34E0063E063 /* ReallyRoundedBtn.swift */; };
 		EBDAFBBD99603568ADB8EA5D /* Pods_SmallJobs2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +102,10 @@
 		B5E18A61227502CB0063E063 /* LocalJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJob.swift; sourceTree = "<group>"; };
 		B5E18A6322750FE50063E063 /* LocalJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJobCell.swift; sourceTree = "<group>"; };
 		B5E18A6B22751C7C0063E063 /* LocalJobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalJobCell.xib; sourceTree = "<group>"; };
+		B5E18A6E22754CFB0063E063 /* WhiteToClearFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteToClearFade.swift; sourceTree = "<group>"; };
+		B5E18A70227695610063E063 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		B5E18A7222769DD10063E063 /* OutlinedRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedRoundedButton.swift; sourceTree = "<group>"; };
+		B5E18A742276A34E0063E063 /* ReallyRoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReallyRoundedBtn.swift; sourceTree = "<group>"; };
 		BCD594718AF878EE1CB3847B /* Pods_SmallJobs2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallJobs2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9504F9AE1004FCD1668AEDB /* Pods-SmallJobs2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallJobs2.0.release.xcconfig"; path = "Target Support Files/Pods-SmallJobs2.0/Pods-SmallJobs2.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +181,7 @@
 			children = (
 				B52089B02260F28700C72793 /* AuthVC.swift */,
 				B52089B22260F2F200C72793 /* LoginVC.swift */,
+				B5E18A70227695610063E063 /* SignUpVC.swift */,
 				B5A500DD225F8F9700876FF2 /* SearchVC.swift */,
 				B5A500DF225F8F9700876FF2 /* SavedVC.swift */,
 				B5A500F0225F923800876FF2 /* JobsVC.swift */,
@@ -206,6 +215,9 @@
 				B53BB56022667D7F002D8375 /* SubtleShadow.swift */,
 				B53BB562226682F9002D8375 /* RoundedImageView.swift */,
 				B54C3909227214E60020F4B5 /* MessageCell.swift */,
+				B5E18A6E22754CFB0063E063 /* WhiteToClearFade.swift */,
+				B5E18A7222769DD10063E063 /* OutlinedRoundedButton.swift */,
+				B5E18A742276A34E0063E063 /* ReallyRoundedBtn.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,6 +397,7 @@
 				B53BB55F22657ADE002D8375 /* CreateNewHireVC.swift in Sources */,
 				B5A500E0225F8F9700876FF2 /* SavedVC.swift in Sources */,
 				B52089B72260F74400C72793 /* AuthService.swift in Sources */,
+				B5E18A71227695610063E063 /* SignUpVC.swift in Sources */,
 				B53BB563226682F9002D8375 /* RoundedImageView.swift in Sources */,
 				B52089AF2260E5B800C72793 /* RoundedView.swift in Sources */,
 				B5D5FA49226186C70092D8A3 /* InsetTextField.swift in Sources */,
@@ -399,12 +412,14 @@
 				B5D5FA602264CEC60092D8A3 /* NewMessageToBoss.swift in Sources */,
 				B52089A3225FA51500C72793 /* SampleJobCell.swift in Sources */,
 				B5E18A62227502CB0063E063 /* LocalJob.swift in Sources */,
+				B5E18A752276A34E0063E063 /* ReallyRoundedBtn.swift in Sources */,
 				B52089B32260F2F200C72793 /* LoginVC.swift in Sources */,
 				B52089A5225FAB9800C72793 /* UITabBarViewController.swift in Sources */,
 				B5D5FA4B2262C6410092D8A3 /* CurrentJobCell.swift in Sources */,
 				B5A500F1225F923800876FF2 /* JobsVC.swift in Sources */,
 				B5D5FA452261808F0092D8A3 /* JobChannelCell.swift in Sources */,
 				B5A500DE225F8F9700876FF2 /* SearchVC.swift in Sources */,
+				B5E18A6F22754CFB0063E063 /* WhiteToClearFade.swift in Sources */,
 				B5D5FA642264D9A20092D8A3 /* BindToKeyboard.swift in Sources */,
 				B5A500FE225F9E9300876FF2 /* SampleJob.swift in Sources */,
 				B5D5FA5C2263B12F0092D8A3 /* BlackToClearFade.swift in Sources */,
@@ -412,6 +427,7 @@
 				B5D5FA552263AB720092D8A3 /* GradientRoundedButton.swift in Sources */,
 				B52089AD2260E57C00C72793 /* RoundedButton.swift in Sources */,
 				B5E18A6422750FE50063E063 /* LocalJobCell.swift in Sources */,
+				B5E18A7322769DD10063E063 /* OutlinedRoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

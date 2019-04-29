@@ -43,6 +43,18 @@ extension SearchVC: UICollectionViewDelegate, UICollectionViewDataSource{
         }
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if collectionView == self.LocalJobCollectionView {
+        return CGSize(width: view.frame.width / 2, height: view.frame.height)
+        } else {
+            return CGSize(width: view.frame.width, height: view.frame.height)
+        }
+    }
+    
+    func ollectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 0
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.SampleJobCollectionView {
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "sampleJobCell", for: indexPath) as! SampleJobCell

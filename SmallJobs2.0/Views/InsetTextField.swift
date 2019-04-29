@@ -13,7 +13,7 @@ class InsetTextField: UITextField {
     private var padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
     
     override func awakeFromNib() {
-        let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.3974208048)])
+        let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.7843137255, green: 0.7843137255, blue: 0.7843137255, alpha: 1)])
         
         self.attributedPlaceholder = placeholder
         super.awakeFromNib()
