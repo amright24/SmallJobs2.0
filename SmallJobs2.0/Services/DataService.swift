@@ -11,9 +11,14 @@ import Firebase
 
 
 let DB_BASE = Database.database().reference()
+let SB_BASE = Storage.storage().reference()
 
 class DataService {
     static let instance = DataService()
+    
+    let uid = Auth.auth().currentUser?.uid
+    
+    private var _REF_STORAGE = SB_BASE
     
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
@@ -23,6 +28,10 @@ class DataService {
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
+    }
+    
+    var REF_STORAGE: StorageReference {
+        return _REF_STORAGE
     }
     
     var REF_USERS: DatabaseReference {
@@ -65,6 +74,27 @@ class DataService {
         }
     }
     
+    func getAllFeedJobs(handler: @escaping (_ jobs: [Job]) -> ()) {
+        var jobArray = [Job]()
+        REF_JOB_FEED.observeSingleEvent(of: .value) { (feedJobSnapshot) in
+            guard let feedJobSnapshot = feedJobSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for job in feedJobSnapshot {
+                let title = job.childSnapshot(forPath: "jobTitle").value as! String
+                let pay = job.childSnapshot(forPath: "pay").value as! String
+                let description = job.childSnapshot(forPath: "description").value as! String
+                let date = job.childSnapshot(forPath: "date").value as! String
+                let senderId = job.childSnapshot(forPath: "senderId").value as! String
+                let job = Job(title: title, pay: pay, description: description, date: date, senderId: senderId)
+                jobArray.append(job)
+            }
+            handler(jobArray)
+        }
+        
+       // ACCESS STORAGE HERE AND DO "FOR" LOOP TO GET JOB IMAGES
+        
+        
+    }
+    
     func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
         var messageArray = [Message]()
         REF_MESSAGE_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
@@ -75,7 +105,6 @@ class DataService {
                 let senderId = message.childSnapshot(forPath: "senderId").value as! String
                 let message = Message(content: content, senderId: senderId)
                 messageArray.append(message)
-                
             }
             
             handler(messageArray)

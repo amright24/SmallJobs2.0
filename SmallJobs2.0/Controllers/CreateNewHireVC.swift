@@ -49,14 +49,14 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        
     }
     
     
     @objc func keyboardWillShow(notification: Notification) {
         view.frame.origin.y = -200
     }
-    
+    @objc func keyboardWillChange(notification: Notification) {
+    }
     @objc func keyboardWillHide(notification: Notification) {
         view.frame.origin.y = 0
     }
@@ -69,26 +69,47 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
         self.present(image, animated: true)
     }
     
+//    func uploadJobImage(_ image: UIImage, completion: @escaping(_ url: URL?) -> ()) {
+//        guard let uid = Auth.auth().currentUser?.uid else { return }
+//        let jobName: String = self.titleJobNameTxt.text!
+//        let storageRef = Storage.storage().reference().child("\(jobName)\(uid)")
+//
+//        guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
+//
+//        let metadata = StorageMetadata()
+//        metadata.contentType = "image/jpg"
+//        storageRef.putData(imageData, metadata: metadata) { metadata, error in
+//            if error == nil, metadata != nil {
+//
+//                storageRef.downloadURL { url, error in
+//                    completion(url)
+//                    // success!
+//                }
+//                print("success line 49")
+//            } else {
+//                print("failed: line 51")
+//                completion(nil)
+//            }
+//        }
+//    }
     func uploadJobImage(_ image: UIImage, completion: @escaping(_ url: URL?) -> ()) {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        let storageRef = Storage.storage().reference().child("user\(uid)")
-        
+        let storage = Storage()
+        let uid = Auth.auth().currentUser?.uid
+        let storageRef = storage.reference()
+        let jobImageRef = storageRef.child("\(String(describing: uid))/\(String(describing: jobDescriptionText.text))")
         guard let imageData = UIImageJPEGRepresentation(image, 0.75) else { return }
-        
-        let metadata = StorageMetadata()
-        metadata.contentType = "image/jpg"
-        storageRef.putData(imageData, metadata: metadata) { metadata, error in
-            if error == nil, metadata != nil {
-                
-                storageRef.downloadURL { url, error in
-                    completion(url)
-                    // success!
-                }
-                print("success line 49")
-            } else {
-                print("failed: line 51")
-                completion(nil)
-            }
+        let uploadTask = jobImageRef.putData(imageData, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else { return }
+        }
+        jobImageRef.downloadURL { (url, error) in
+            guard let downloadURL = url else { return }
+        }
+        uploadTask.observe(.resume) { snapshot in
+            // Upload resumed, also fires when the upload starts
+        }
+        uploadTask.observe(.progress) { snapshot in
+            let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
+                / Double(snapshot.progress!.totalUnitCount)
         }
     }
  
@@ -119,12 +140,17 @@ class CreateNewHireVC: UIViewController, UINavigationControllerDelegate, UIImage
             uploadPostBtn.isEnabled = false
             
             
+            self.uploadJobImage(newJobUploadedImage.image!) { (url) in
+                if url != nil {
+                    print("success uploading image")
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print("Error uploading Job Image")
+                }
+            }
             self.uploadJob(withTitle: self.titleJobNameTxt.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, forPay: self.payInput.text!, forDesc: self.jobDescriptionText.text!, forDate: self.dateInput.text!) { (isComplete) in
                 if isComplete {
-                    
                     self.uploadPostBtn.isEnabled = true
-                    self.dismiss(animated: true, completion: nil)
-                    
                 } else {
                     self.uploadPostBtn.isEnabled = true
                     print("//      there was a problem uploading this job   //")

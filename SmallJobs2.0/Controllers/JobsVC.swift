@@ -9,13 +9,15 @@
 import UIKit
 
 class JobsVC: UIViewController {
-
+    
     private var currentJob = CurrentJob.createCurrentJob()
     private let cellReuseIdentifier = "currentJobCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
  
 }
 
@@ -40,6 +42,8 @@ extension JobsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
 }
+
+
 
 
 

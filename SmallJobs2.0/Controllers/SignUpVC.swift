@@ -26,7 +26,7 @@ class SignUpVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         HideKeyboard()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
     func HideKeyboard() {
@@ -43,14 +43,14 @@ class SignUpVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        
     }
     
     
     @objc func keyboardWillShow(notification: Notification) {
         view.frame.origin.y = -100
     }
-    
+    @objc func keyboardWillChange(notification: Notification) {
+    }
     @objc func keyboardWillHide(notification: Notification) {
         view.frame.origin.y = 0
     }
